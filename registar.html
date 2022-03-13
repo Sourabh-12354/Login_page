@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registar Page</title>
+    <style>
+        body{
+            background-color: goldenrod;
+        }
+        form{
+            background-color: darkgrey;
+            padding-top: 2px;
+            width: 400px;
+            height: 590px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 25px auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .fname,.lname,.email,.number,.date,.password{
+            margin-top: 5px;
+            font-size: medium;
+            width: 200px;
+            height: 25px;
+        }
+        #security{
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .answer{
+            margin: 5px;
+            font-size: medium;
+            width: 200px;
+            height: 25px;
+        }
+        #register{
+            margin: 5px;
+            border-radius: 50px;
+            width: 100px;
+            height: 30px;
+            background-color: goldenrod;
+        }
+        label{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        img{
+            float: left;
+            width: 30%;
+            height: 590px;
+        }
+    </style>
+</head>
+<body>
+    <img src="signup.png" alt="">
+    <form action="">
+        <h2>Sign Up</h2>
+        <label id="lbl-name">First Name:</label><br>
+        <input type="text" class="fname" required="" autocomplete="off"  placeholder="Enter First Anme:"><br>
+        <label class="placeholder">Last Name:</label><br>
+        <input type="text" class="lname" required="" autocomplete="off"  placeholder="Enter Last Name:"><br>
+        <label class="placeholder">Email:</label><br>
+        <input type="email" class="email" required="" autocomplete="off"  placeholder="Enter Email Address:"><br>
+        <label class="placeholder">Phone:</label><br>
+        <input type="number" class="number" required="" autocomplete="off"  placeholder="Enter Phone Number:"><br>
+        <label class="placeholder">Date Of Birth:</label><br>
+        <input type="date" class="date" required="" autocomplete="off"><br>
+        <label class="placeholder">Password:</label><br>
+        <input type="password" class="password" autocomplete="off"  placeholder="Type A Password"><br>
+        <h3>Security Question:</h3>
+        <select name="security" id="security">
+            <br>
+            <option value="">Which is First School</option>
+            <option value="">Best Friend Name:</option>
+            <option value="">Childhood Name:</option>
+        </select><br>
+        <input type="text" class="answer" autocomplete="off" placeholder="Write Question Answer:"><br>
+        <input type="button" value="Register" id="register">
+    </form>
+</body>
+</html>
